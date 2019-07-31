@@ -33,12 +33,17 @@
         var data=[];
 
         for (var i = 0; i < tops_data.length; i++) {
-          //alert(tops_data[i]['img_src'])
+          alert(tops_data[i]['img_src'])
           data.push({img_src:tops_data[i]['img_src'],tops_take:tops_data[i]['tops_take'],tops_sode:tops_data[i]['tops_sode']});
         }
 
         data.push({img_src:src,tops_take:take,tops_sode:sode});
         localStorage.setItem('topslist', JSON.stringify(data));
+        //alert(src,take,sode);
+
+        var tops_data = localStorage.getItem('topslist');
+        tops_data = JSON.parse(tops_data);
+        alert(tops_data[1]['img_src'])
 
 
         //var tops_data = localStorage.getItem('topslist');

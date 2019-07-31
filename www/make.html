@@ -30,6 +30,10 @@
     }
 });
 
+//初期状態を表すフラグ
+localStorage.setItem("makeid_tops",1);
+
+
 //アバター表示のスクリプト
 /*
 配列内に画像を保存
@@ -42,34 +46,34 @@
   <h1>User Registration</h1>
 
 <div class="dress">
-      <img src="m2.png" id="man" width="70" height="auto">
+      <img src="./img/m2.png" id="man" width="70" height="auto">
       <!-- 撮影前のダミー画像を置いている　撮影後、ここに画像が反映される -->      
 </div>
 <br>
 
  <div class="tabs">
   <input id="face" type="radio" name="tab_item" checked>
-  <label class="tab_item" for="face"><img src="icon_face.png" width="30" height="30"></label>
+  <label class="tab_item" for="face"><img src="./img/icon_face.png" width="30" height="30"></label>
   <input id="hair" type="radio" name="tab_item">
-  <label class="tab_item" for="hair"><img src="icon_hair.png" width="30" height="30"></label>
+  <label class="tab_item" for="hair"><img src="./img/icon_hair.png" width="30" height="30"></label>
   <input id="body" type="radio" name="tab_item">
-  <label class="tab_item" for="body"><img src="icon_body.png" width="30" height="30"></label>
+  <label class="tab_item" for="body"><img src="./img/icon_body.png" width="30" height="30"></label>
   <div class="tab_content" id="face_content">
     <div class="tab_content_description">
       <p class="c-txtsp">
         <!--　中身をスクロールする部分 -->
         <div style="width:400px;height:200px;overflow:auto;">
-          <a href="#" class="c-btn hover2" id="tops0" onclick="change(this.id);"><div class="trim2"><img src="noimage.gif" id="tops_img0" width="80" height="75" style="position:absolute;object-fit: cover;"></div></a>
+          <a href="#" class="c-btn hover2" id="tops0" onclick="change(this.id);"><div class="trim2"><img src="./img/noimage.gif" id="tops_img0" width="80" height="75" style="position:absolute;object-fit: cover;"></div></a>
 
-          <a href="#" class="c-btn hover2" id="tops0" onclick="change(this.id);"><div class="trim2"><img src="noimage.gif" id="tops_img0" width="80" height="75" style="position:absolute;object-fit: cover;"></div></a>
+          <a href="#" class="c-btn hover2" id="tops0" onclick="change(this.id);"><div class="trim2"><img src="./img/noimage.gif" id="tops_img0" width="80" height="75" style="position:absolute;object-fit: cover;"></div></a>
 
-          <a href="#" class="c-btn hover2" id="tops0" onclick="change(this.id);"><div class="trim2"><img src="noimage.gif" id="tops_img0" width="80" height="75" style="position:absolute;object-fit: cover;"></div></a>
+          <a href="#" class="c-btn hover2" id="tops0" onclick="change(this.id);"><div class="trim2"><img src="./img/noimage.gif" id="tops_img0" width="80" height="75" style="position:absolute;object-fit: cover;"></div></a>
 
-          <a href="#" class="c-btn hover2" id="tops0" onclick="change(this.id);"><div class="trim2"><img src="noimage.gif" id="tops_img0" width="80" height="75" style="position:absolute;object-fit: cover;"></div></a>
+          <a href="#" class="c-btn hover2" id="tops0" onclick="change(this.id);"><div class="trim2"><img src="./img/noimage.gif" id="tops_img0" width="80" height="75" style="position:absolute;object-fit: cover;"></div></a>
 
-          <a href="#" class="c-btn hover2" id="tops0" onclick="change(this.id);"><div class="trim2"><img src="noimage.gif" id="tops_img0" width="80" height="75" style="position:absolute;object-fit: cover;"></div></a>
+          <a href="#" class="c-btn hover2" id="tops0" onclick="change(this.id);"><div class="trim2"><img src="./img/noimage.gif" id="tops_img0" width="80" height="75" style="position:absolute;object-fit: cover;"></div></a>
 
-          <a href="#" class="c-btn hover2" id="tops0" onclick="change(this.id);"><div class="trim2"><img src="noimage.gif" id="tops_img0" width="80" height="75" style="position:absolute;object-fit: cover;"></div></a>
+          <a href="#" class="c-btn hover2" id="tops0" onclick="change(this.id);"><div class="trim2"><img src="./img/noimage.gif" id="tops_img0" width="80" height="75" style="position:absolute;object-fit: cover;"></div></a>
           </div>
       </p>
     </div>
